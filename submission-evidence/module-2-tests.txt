@@ -1,0 +1,54 @@
+
+Test Cases for Account Model
+- It should Create an account and add it to the database
+- It should Create an Account and assert that it exists
+- It should Delete an account from the database
+- It should Deserialize an account
+- It should not Deserialize an account with a KeyError
+- It should not Deserialize an account with a TypeError
+- It should Find an Account by name
+- It should List all Accounts in the database
+- It should Read an account
+- It should Serialize an account
+- It should Update an account
+
+Account Service Tests
+- It should return 404 when an account does not exist
+- It should not Create an Account when sending the wrong data
+- It should Create a new Account
+- It should be safe to delete an unknown account
+- It should delete an account and return no content
+- It should be healthy
+- It should get 200_OK from the Home Page
+- It should filter accounts by exact name
+- It should return an empty list when no accounts exist
+- It should list every account
+- It should report an unsupported HTTP method
+- It should Read an account by its ID
+- It should not Create an Account when sending the wrong media type
+- It should reject an incomplete account update
+- It should return 404 when updating an unknown account
+- It should require JSON for an account update
+- It should update an account and persist the new values
+
+Test Flask CLI Commands
+- It should call the db-create command
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service\__init__.py                   18      3    83%   32-35
+service\common\__init__.py             0      0   100%
+service\common\cli_commands.py         7      0   100%
+service\common\error_handlers.py      32      3    91%   76-78
+service\common\log_handlers.py        10      1    90%   21
+service\common\status.py              46      0   100%
+service\config.py                     11      0   100%
+service\models.py                     69      3    96%   32, 98, 127
+service\routes.py                     52      0   100%
+----------------------------------------------------------------
+TOTAL                                245     10    96%
+----------------------------------------------------------------------
+Ran 29 tests in 1.734s
+
+OK
+
