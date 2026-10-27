@@ -5,7 +5,7 @@ Keep final screenshots, URLs, and command outputs here, grouped by module. Use o
 | Module | Evidence file | State |
 |---|---|---|
 | 1 — Agile planning | [module-1.md](module-1.md) | Complete for AI-graded submission |
-| 2 — Sprint 1 TDD | `module-2.md` | Not started |
+| 2 — Sprint 1 TDD | [module-2.md](module-2.md) | Code, tests, pull requests, and API outputs complete; focused board screenshots in progress |
 | 3 — Sprint 2 CI and security | `module-3.md` | Not started |
 | 4 — Image and OpenShift | `module-4.md` | Not started |
 | 5 — Tekton CD | `module-5.md` | Not started |
